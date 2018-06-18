@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hanbali_Fiqh>
+
+	<Intro>
+		<Basmalah>bismillahi ar-raḥma̅n ar-raḥi̅m allahumma ṣalli 'ala̅ muḥammad wa'ala̅ a̅lihi wa ṣaḥbihi wa sallim</Basmalah>
+
+		<Overview>This XML structure assumes the [ACTION] to be the basic unit of fiqh. Each [ACTION] is a child of either [Conditions], [Invalidators], or the five degrees, eg [Obligatory], [Recommended], etc. Those elements are children of a [CHAMBER] (a sub-section), which is a child of a [GATE] (the traditional 'bab' of fiqh). Each [ACTION] can have an [Expiation] and an [Exception] children. Each [ACTION] and all other elements can have a [Source] child, referencing the [Source_Ref] elements with the [Bibliography] children. Verb phrases are in gerund form.</Overview>
+		
+		<Dev>Try out https://www.jstree.com/ for web UI,  Use http://countwordsfree.com/xmlviewer as example for UI dev ...</Dev>
+		
+	</Intro>
+	
+	<Example_Gate>
+		<Example_Chamber>
+			<Description>
+				<Descrip>A general description needed for or beyond what follows.</Descrip>
+				<Source>Scholar name</Source>
+			</Description>
+			<Invalidators>
+				<Example_Action>
+					<Descrip>Action in gerund form.</Descrip>
+					
+					<Source>Scholar name</Source>
+					
+					<Index>Index as float if part of a sequence for entire chamber, eg 1.0, 4.6, 101.0, etc.</Index>
+					
+					<Expiation>
+						<Descrip>Action in gerund form.</Descrip>
+						<Source>Scholar name</Source>
+					</Expiation>
+					
+					<Exceptions>
+						<Example_Action>
+							<Descrip>Action in gerund form.</Descrip>
+							<Source>Scholar name</Source>
+						</Example_Action>
+					</Exceptions>
+				</Example_Action>
+			</Invalidators>
+		</Example_Chamber>
+	</Example_Gate>
+	
+	<Purification>
+		<Water>
+			<Description>
+				<Descrip>Water as it was created is ritually purifying. Pure water, on the other hand, has been changed by mixing with a soluble, pure substance (eg, milk). It is neither ritually purifying nor removes filth.</Descrip>
+				<Source>Balban</Source>
+			</Description>
+			
+			<Reprehensible>
+				<Nonsolubles>
+					<Descrip>Mixing with non-solubles (eg, grease) or sea salt, yet remains ritually purifying.</Descrip>
+					<Source>Balban</Source>
+				</Nonsolubles>
+			</Reprehensible>
+			
+			<Forbidden>
+				<Stolen_Water>
+					<Descrip>Using water stolen or traded for something forbidden. It is neither ritually purifying nor removes filth.</Descrip>
+					<Source>Balban</Source>
+				</Stolen_Water>
+				
+				<Filthy_Water>
+					<Descrip>Using filthy water. This type of water is changed by filth not located in the place being purified or has in a small quantity encountered filth. A small quantity is less than 162 liters.</Descrip>
+					<Source>Balban</Source>
+				</Filthy_Water>
+				
+			</Forbidden>
+			
+		</Water>
+		
+		<Containers_and_Animals>
+			<Forbidden>
+				<Gold_and_Silver>
+					<Descrip>Using containers made of or soldered with gold or silver.</Descrip>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Some_Silver>
+							<Descrip>Using containers with a small amount of silver solder when needed.</Descrip>
+							<Source>Balban</Source>
+						</Some_Silver>
+					</Exceptions>
+				</Gold_and_Silver>
+				
+				<Unslaughtered_Animals>
+					<Descrip>Using the skin and parts of an unslaughtered animal. They are filthy and do not become pure via tanning.</Descrip>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Hair_etc>
+							<Descrip>Using hair and the like (eg, feathers).</Descrip>
+							<Source>Balban</Source>
+						</Hair_etc>
+					</Exceptions>
+				</Unslaughtered_Animals>
+				
+			</Forbidden>
+				
+		</Containers_and_Animals>
+		
+		<Call_of_Nature>
+			<Obligatory>
+				<Cleaning_with_Water>
+					<Descrip>Cleaning with water [istinja̅'] is obligatory (Q) for anything that exits, from urine to worms, except flatulence and whatever does not defile.</Descrip>
+					<Source>Balban</Source>
+				</Cleaning_with_Water>
+			</Obligatory>
+			
+			<Recommended>
+				<Distancing>
+					<Descrip>Distancing oneself in vacant areas.</Descrip>
+					<Source>Balban</Source>
+				</Distancing>
+				
+				<Soft_Ground>
+					<Descrip>Seeking soft ground.</Descrip>
+					<Source>Balban</Source>
+				</Soft_Ground>
+				
+				<Covering_Head>
+					<Descrip>Covering the head.</Descrip>
+					<Source>Balban</Source>
+				</Covering_Head>
+				
+				<Sandals>
+					<Descrip>Wearing sandals.</Descrip>
+					<Source>Balban</Source>
+				</Sandals>
+				
+				<Left_Foot>
+					<Descrip>Entering with left foot.</Descrip>
+					<Source>Balban</Source>
+				</Left_Foot>
+				
+				<Seeking_Protection>
+					<Descrip>Saying upon entering: bismillahi ar-raḥma̅n ar-raḥi̅m allahumma inni̅ a'u̅dhu bika mina al-khubthi wa al-khaba̅'ith.</Descrip>
+					<Source>Balban</Source>
+				</Seeking_Protection>
+				
+				<Favoring_Left_Foot>
+					<Descrip>Favoring left foot when sitting.</Descrip>
+					<Source>Balban</Source>
+				</Favoring_Left_Foot>
+				
+				<Left_Hand>
+					<Descrip>Cleaning with left hand.</Descrip>
+					<Source>Balban</Source>
+				</Left_Hand>
+				
+				<Wiping_Three_Times>
+					<Descrip>Wiping member base to tip three times and tapping three times.</Descrip>
+					<Source>Balban</Source>
+				</Wiping_Three_Times>
+				
+				<Stones>
+					<Descrip>Cleaning with stones and the like [istijma̅r] (given that the filth does not move beyond the typical area and there are at least three clean wipes) and then with water.</Descrip>
+					<Source>Balban</Source>
+				</Stones>
+				
+				<Seeking_Forgiveness>
+					<Descrip>Saying upon exiting: ghufra̅nak al-ḥamdulilla̅hi alladhi adhhaba 'anni̅ al-adha̅ wa 'a̅fa̅ni̅</Descrip>
+					<Source>Balban</Source>
+				</Seeking_Forgiveness>
+				
+			</Recommended>
+			
+			<Neutral>
+				<Only_Water>
+					<Descrip>Cleaning only with water or only with stones and the like (Q), but water is superior.</Descrip>
+					<Source>Balban</Source>
+				</Only_Water>
+			</Neutral>
+
+			<Reprehensible>
+				<Allahs_Name>
+					<Descrip>Entering with anything bearing Allah's name.</Descrip>
+					<Source>Balban</Source>
+				</Allahs_Name>
+				
+				<Speaking>
+					<Descrip>Speaking without need.</Descrip>
+					<Source>Balban</Source>
+				</Speaking>
+				
+				<Lifting_Garment_Early>
+					<Descrip>Lifting garment before getting close to the ground.</Descrip>
+					<Source>Balban</Source>
+				</Lifting_Garment_Early>
+				
+				<Crevices>
+					<Descrip>Urinating in crevices.</Descrip>
+					<Source>Balban</Source>
+				</Crevices>
+				
+				<Touching_Member>
+					<Descrip>Touching member with right hand without need.</Descrip>
+					<Source>Balban</Source>
+				</Touching_Member>
+				
+				<Sun_and_Moon>
+					<Descrip>Facing the sun or moon.</Descrip>
+					<Source>Balban</Source>
+				</Sun_and_Moon>
+				
+				<Remaining>
+					<Descrip>Remaining longer than needed.</Descrip>
+					<Source>Balban</Source>
+				</Remaining>
+				
+				<Paths>
+					<Descrip>Using paths, congregation places, and the like.</Descrip>
+					<Source>Balban</Source>
+				</Paths>
+
+				<Fruit_Trees>
+					<Descrip>Using space under fruit-beaing trees.</Descrip>
+					<Source>Balban</Source>
+				</Fruit_Trees>
+				
+			</Reprehensible>
+			
+			<Forbidden>
+				<Prayer_Direction>
+					<Descrip>Facing or turning one's back from the direction of prayer [qiblah].</Descrip>
+					<Source>Balban</Source>
+					<Exceptions>
+						<In_Buildings>
+							<Descrip>Doing so in or between buildings.</Descrip>
+							<Source>Balban</Source>
+						</In_Buildings>
+					</Exceptions>
+				</Prayer_Direction>
+
+				<Cleaning_with_Dung_etc>
+					<Descrip>Cleaning with dung, bones, food, anything with sanctity, or a part of an animal while it is attached to the animal.</Descrip>
+					<Source>Balban</Source>
+				</Cleaning_with_Dung_etc>
+				
+				<Other_Than_Pure_Neutral_etc_Object>
+					<Descrip>Cleaning with other than an item that is pure, neutral, dry, and capable of cleaning the area.</Descrip>
+					<Source>Balban</Source>
+				</Other_Than_Pure_Neutral_etc_Object>
+
+			</Forbidden>
+		
+		</Call_of_Nature>
+		
+		<Body>
+			<Obligatory>
+				<Circumcising>
+					<Descrip>Circumcising both males and females.</Descrip>
+					<Source>Balban</Source>
+				</Circumcising>
+			</Obligatory>
+			
+			<Recommended>
+				<Rightside>
+					<Descrip>Beginning with the rightside for actions.</Descrip>
+					<Source>Balban</Source>
+				</Rightside>
+		
+				<Toothstick>
+					<Descrip>Using the toothstick [sawwa̅k] at all times, especially for prayer.</Descrip>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Fasting_After_Noon>
+							<Descrip>Not using it after noon [ẓuhr] prayer for one fasting.</Descrip>
+							<Source>Balban</Source>
+						</Fasting_After_Noon>
+					</Exceptions>
+				</Toothstick>
+				
+				<Oil>
+					<Descrip>Applying oil every other day.</Descrip>
+					<Source>Balban</Source>
+				</Oil>
+				
+				<Kohl>
+					<Descrip>Applying kohl three times to the eyes.</Descrip>
+					<Source>Balban</Source>
+				</Kohl>
+				
+				<Mirror>
+					<Descrip>Looking in the mirror.</Descrip>
+					<Source>Balban</Source>
+				</Mirror>
+				
+				<Perfume>
+					<Descrip>Applying perfume.</Descrip>
+					<Source>Balban</Source>
+				</Perfume>
+				
+				<Removing_Hair>
+					<Descrip>Removing pubic hair and plucking armpit hair.</Descrip>
+					<Source>Balban</Source>
+				</Removing_Hair>
+				
+				<Trimming_Mustache>
+					<Descrip>Trimming the mustache.</Descrip>
+					<Source>Balban</Source>
+				</Trimming_Mustache>
+				
+				<Trimming_Nails>
+					<Descrip>Trimming nails.</Descrip>
+					<Source>Balban</Source>
+				</Trimming_Nails>
+				
+			</Recommended>
+			
+			<Reprehensible>
+				<Shaving_Part>
+					<Descrip>Shaving part of the head.</Descrip>
+					<Source>Balban</Source>
+				</Shaving_Part>
+				
+				<White_Hairs>
+					<Descrip>Plucking white hairs.</Descrip>
+					<Source>Balban</Source>
+				</White_Hairs>
+				
+				<Piercing_Boys>
+					<Descrip>Piercing the ears of a young boy.</Descrip>
+					<Source>Balban</Source>
+				</Piercing_Boys>
+				
+				<Circumcising_Early>
+					<Descrip>Circumcising between birth and the seventh day.</Descrip>
+					<Source>Balban</Source>
+				</Circumcising_Early>
+			
+			</Reprehensible>
+		
+		</Body>
+		
+		<Ablution>
+			<Conditions>
+				<Intention>
+					<Descrip>Setting intention.</Descrip>
+					<Source>Balban</Source>
+				</Intention>
+			</Conditions>
+			
+			<Obligatory>
+				<Basmalah>
+					<Descrip>Saying bismillahi ar-raḥma̅n ar-raḥi̅m.</Descrip>
+					<Index>1.0</Index>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Forgetting>
+							<Descrip>Forgetting or being ignorant of the fact, then obligation is lifted.</Descrip>
+							<Source>Balban</Source>
+						</Forgetting>
+					</Exceptions>
+				</Basmalah>
+				
+				<Face_Mouth_and_Nostrils>
+					<Descrip>Washing the face and rinsing the mouth and nostrils.</Descrip>
+					<Index>2.0</Index>
+					<Source>Balban</Source>
+				</Face_Mouth_and_Nostrils>
+				
+				<Arms>
+					<Descrip>Washing the arms.</Descrip>
+					<Index>3.0</Index>
+					<Source>Balban</Source>
+				</Arms>
+				
+				<Entire_Head>
+					<Descrip>Wiping the entire head, including the ears.</Descrip>
+					<Index>4.0</Index>
+					<Source>Balban</Source>
+				</Entire_Head>
+				
+				<Feet>
+					<Descrip>Washing the feet.</Descrip>
+					<Index>5.0</Index>
+					<Source>Balban</Source>
+				</Feet>
+				
+				<Order>
+					<Descrip>Ordering the acts correctly.</Descrip>
+					<Source>Balban</Source>
+				</Order>
+				
+				<Contiguousness>
+					<Descrip>Making the acts consecutive.</Descrip>
+					<Source>Balban</Source>
+				</Contiguousness>
+				
+			</Obligatory>
+			
+			<Recommended>
+				<Prayer_Direction>
+					<Descrip>Facing the direction of prayer [qiblah].</Descrip>
+					<Index>0.01</Index>
+					<Source>Balban</Source>
+				</Prayer_Direction>
+				
+				<Toothstick>
+					<Descrip>Using the toothstick.</Descrip>
+					<Source>Balban</Source>
+				</Toothstick>
+				
+				<Hands_First>
+					<Descrip>First washing the hands.</Descrip>
+					<Index>1.1</Index>
+					<Source>Balban</Source>
+				</Hands_First>
+				
+				<Mouth_Then_Nostrils>
+					<Descrip>Rinsing the mouth before the nostrils, vigorously if not fasting.</Descrip>
+					<Index>2.1</Index>
+					<Source>Balban</Source>
+				</Mouth_Then_Nostrils>
+				
+				<Fingers_Through_Hair>
+					<Descrip>Running fingers through thick hair.</Descrip>
+					<Index>4.1</Index>
+					<Source>Balban</Source>
+				</Fingers_Through_Hair>
+				
+				<Fingers_Betwen_Digits>
+					<Descrip>Running fingers between fingers and toes.</Descrip>
+					<Index>5.1</Index>
+					<Source>Balban</Source>
+				</Fingers_Betwen_Digits>
+				
+				<Three_Times>
+					<Descrip>Washing a second and third time.</Descrip>
+					<Source>Balban</Source>
+				</Three_Times>
+				
+				<Supplication>
+					<Descrip>Looking to the sky and saying: ashhadu an la ilaha illa Allahu wahdahu la sharika lahu, wa ashhadu anna Muhammadan 'abduhu wa rasuluhu, Allahumma j'alni mina at-tawwabin wa j'alni mina al-mutatahhirin, subhanaka Allahumma wa bi hamdika, ashhadu an la ilaha illa anta, astaghfiruka wa atubu ilayk [ED: Do transliteration]</Descrip>
+					<Source>Balban</Source>
+				</Supplication>
+				
+			</Recommended>
+			
+			<Reprehensible>
+				<Four_Times>
+					<Descrip>Washing more than a third time.</Descrip>
+					<Source>Balban</Source>
+				</Four_Times>
+			</Reprehensible>
+			
+		</Ablution>
+		
+		<Purificatory_Bath>
+			<Conditions>
+				<Intention>
+					<Descrip>Setting intention.</Descrip>
+					<Source>Balban</Source>
+				</Intention>
+			</Conditions>
+			
+			<Obligatory>
+				<Basmalah>
+					<Descrip>Saying bismillahi ar-raḥma̅n ar-raḥi̅m.</Descrip>
+					<Index>1.0</Index>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Forgetting>
+							<Descrip>Forgetting or being ignorant of the fact, then obligation is lifted.</Descrip>
+							<Source>Balban</Source>
+						</Forgetting>
+					</Exceptions>
+				</Basmalah>
+				
+				<ACTION>
+					<Descrip></Descrip>
+					<Source>Balban</Source>
+				</ACTION>
+				
+			</Obligatory>
+		
+		</Purificatory_Bath>
+		
+		<Dry_Ablution>
+			<Conditions>
+				<Intention>
+					<Descrip>Setting intention.</Descrip>
+					<Source>Balban</Source>
+				</Intention>
+			</Conditions>
+			
+			<Obligatory>
+				<Basmalah>
+					<Descrip>Saying bismillahi ar-raḥma̅n ar-raḥi̅m. [Ed: Confirm]</Descrip>
+					<Index>1.0</Index>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Forgetting>
+							<Descrip>Forgetting or being ignorant of the fact, then obligation is lifted.</Descrip>
+							<Source>Balban</Source>
+						</Forgetting>
+					</Exceptions>
+				</Basmalah>
+				
+				<ACTION>
+					<Descrip></Descrip>
+					<Source>Balban</Source>
+				</ACTION>
+				
+			</Obligatory>
+		</Dry_Ablution>
+
+	</Purification>
+	
+	<Fasting>
+		<Fast_Invalidators>
+			<Description>
+				<Descrip>Deliberately, voluntarily, and remembering the fast, it is broken by the following. The day must be made up.</Descrip>
+				<Source>Balban</Source>
+			</Description>
+			<Invalidators>
+				<Inserting_into_Body>
+					<Descrip>Inserting anything into the body or body cavity, from any place.</Descrip>
+					
+					<Source>Balban</Source>
+					
+					<Exceptions>
+						<Water_Reaching_Throat>
+							<Descrip>Having water reach the throat when washing mouth or nostrils.</Descrip>
+							<Source>Balban</Source>
+						</Water_Reaching_Throat>
+
+						<Uretha>
+							<Descrip>Inserting via the uretha.</Descrip>
+							<Source>Balban</Source>
+						</Uretha>
+						
+						<Overwhelming_Need_for_Sex>
+							<Descrip>Having an overwhelming need for coitus and the like.</Descrip>
+							<Source>Balban</Source>
+						</Overwhelming_Need_for_Sex>
+						
+					</Exceptions>
+					
+					<Expiation>
+						<Freeing_a_Slave>
+							<Descrip>Concerning coitus during a Ramadhan fast, freeing a slave. Or else, fasting consecutively for two months. Or else, giving food to 60 poor. Else, the obligation is removed.</Descrip>
+							<Source>Balban</Source>
+							<Exceptions>
+								<Female_with_Excuse>
+									<Descrip>Being female with an excuse of sleeping or being compelled, forgetful, or ignorant.</Descrip>
+									<Source>Balban</Source>
+								</Female_with_Excuse>
+							</Exceptions>
+						</Freeing_a_Slave>
+					
+					</Expiation>
+					
+				</Inserting_into_Body>
+				
+				<Swallowing_Mucus>
+					<Descrip>Swallowing mucus that entered the mouth.</Descrip>
+					<Source>Balban</Source>
+				</Swallowing_Mucus>
+				
+				<Inducing_Vomit>
+					<Descrip>Inducing vomit and then vomitting.</Descrip>
+					<Source>Balban</Source>
+				</Inducing_Vomit>
+				
+				<Ejaculating_from_Touching>
+					<Descrip>Ejaculating or releasing pre-ejaculate [madhi̅] from masturbation or non-genital rubbing.</Descrip>
+					<Source>Balban</Source>
+				</Ejaculating_from_Touching>
+				
+				<Ejaculating_from_Looking>
+					<Descrip>Continuously looking and then ejaculating.</Descrip>
+					<Source>Balban</Source>
+				</Ejaculating_from_Looking>
+				
+				<Intending_to_Break>
+					<Descrip>Intending to break the fast.</Descrip>
+					<Source>Balban</Source>
+				</Intending_to_Break>
+				
+				<Cupping>
+					<Descrip>Being cupped by or cupping someone.</Descrip>
+					<Source>Balban</Source>
+				</Cupping>
+				
+				<ACTION>
+					<Descrip></Descrip>
+					<Source>Balban</Source>
+				</ACTION>
+			</Invalidators>
+		</Fast_Invalidators>
+	</Fasting>
+	
+	<Alms>
+		<Alms_alFitrah>
+			<Description>
+				<Descrip>One ṣa̅' [Ed: a volume unit of three liters] per person of dried dates, raisins, wheat, barley, porridge, flour, or cottage cheese, or any stored grain.</Descrip>
+				<Source>Balban</Source>
+			</Description>
+			
+			<Conditions>
+				<Having_Excess>
+					<Descrip>Having excess of necessary expenses for day and night of Eid al-Fitr.</Descrip>
+					<Source>Balban</Source>
+				</Having_Excess>
+			</Conditions>
+			
+			<Obligatory>
+				<For_Those_Under_Care>
+					<Descrip>Paying it for himself and Muslims under his responsibility.</Descrip>
+					<Source>Balban</Source>
+				</For_Those_Under_Care>
+				
+				<Upon_Sunset>
+					<Descrip>Paying it becomes obligatory at sunset of night of Eid.</Descrip>
+					<Source>Balban</Source>
+				</Upon_Sunset>
+				
+				<Making_Up_Alms>
+					<Descrip>Making up the alms if he has missed the time.</Descrip>
+					<Source>Balban</Source>
+				</Making_Up_Alms>
+				
+			</Obligatory>
+			
+			<Recommended>
+				<For_Unborn_Child>
+					<Descrip>Paying it for an unborn child.</Descrip>
+					<Source>Balban</Source>
+				</For_Unborn_Child>
+				
+				<On_Eid>
+					<Descrip>Paying it on Eid before the Eid prayer.</Descrip>
+					<Source>Balban</Source>
+				</On_Eid>
+				
+			</Recommended>
+			
+			<Neutral>
+				<Two_Days_Prior>
+					<Descrip>Paying up to two days prior to Eid.</Descrip>
+					<Source>Balban</Source>
+				</Two_Days_Prior>
+				
+				<Individual_to_Group>
+					<Descrip>Giving it as an individual to a group, and vice versa.</Descrip>
+					<Source>Balban</Source>
+				</Individual_to_Group>
+				
+			</Neutral>
+			
+			<Reprehensible>
+				<After_Eid_Prayer>
+					<Descrip>Paying it on Eid after the Eid prayer.</Descrip>
+					<Source>Balban</Source>
+				</After_Eid_Prayer>
+			</Reprehensible>
+		</Alms_alFitrah>
+		
+		<Alms_Giving>
+			<Conditions>
+				<Intention>
+					<Descrip>Setting itention.</Descrip>
+					<Source>Balban</Source>
+				</Intention>
+			</Conditions>
+			
+			<Obligatory>
+				<Immediacy>
+					<Descrip>Paying alms immediately.</Descrip>
+					<Source>Balban</Source>
+				</Immediacy>
+			</Obligatory>
+			
+			<Recommended>
+				<All_Recipient_Categories>
+					<Descrip>Paying it evenly to all of the following eight recipient categories: (1) needy, (2) poor, (3) alms workers, (4) leaders whose hearts are being softened, (5) slaves, (6) debtors, (7) those fighting in the path of Allah, and (8) wayfarers.</Descrip>
+					<Source>Balban</Source>
+				</All_Recipient_Categories>
+				
+				<Relatives>
+					<Descrip>Paying alms to relatives not under one's responsibility.</Descrip>
+					<Source>Balban</Source>
+				</Relatives>
+				
+			</Recommended>
+			
+			<Neutral>
+				<One_Recipient_Category>
+					<Descrip>Paying only to one of the eight categories of recipients.</Descrip>
+					<Source>Balban</Source>
+				</One_Recipient_Category>
+			</Neutral>
+			
+			<Forbidden>
+				<Transporting_Alms>
+					<Descrip>Transporting alms beyond distance for shortening prayers, if eligible people are present. (Alms are taken from where the wealth source is located.)</Descrip>
+					<Source>Balban</Source>
+					<Exceptions>
+						<Alms_alFitrah>
+							<Descrip>For alms al-Fitr, taking from wealth at the givers' location.</Descrip>
+							<Source>Balban</Source>
+						</Alms_alFitrah>
+					</Exceptions>
+				</Transporting_Alms>
+				
+				<Other_Than_Eligible_Recipients>
+					<Descrip>Using alms for other than charity to the eight recipient categories.</Descrip>
+					<Source>Balban</Source>
+				</Other_Than_Eligible_Recipients>
+				
+				<To_Bani_Hashim_Nonmuslims_etc>
+					<Descrip>Paying it to Bani̅ Ha̅shim and their freed slaves, an ancestor or descendent, a slave (Q), or a non-Muslim. (Q)</Descrip>
+					<Source>Balban</Source>
+				</To_Bani_Hashim_Nonmuslims_etc>
+				
+			</Forbidden>
+		</Alms_Giving>
+	</Alms>
+	
+	<Transliteration>
+		<a>alif or fatḥa</a>
+		<a̅>long a sound</a̅>
+		<ḥ>ḥa as in ḥala̅l</ḥ>
+		<ED_update>
+			<item>a-b-j-d h-w-z ḥ-ṭ-y k-l-m-n s-'-f-ṣ q-r-sh-t th-kh-dh
+			ḍ-ẓ-gh</item>
+			<item>' a a̅ i i̅ u u̅</item>
+		</ED_update>
+	</Transliteration>
+	
+	<Glossary>
+		<obligatory>wa̅jib</obligatory>
+		<ED_update>
+			<chamber>
+			<misc_sub>Five degrees
+			<item>obligatory: wa̅jib</item>
+			<item>recommended: sunnah</item>
+			<item>neutral: muba̅ḥ</item>
+			<item>reprehensible: makru̅h</item>
+			<item>forbidden: ḥara̅m</item>
+			</misc_sub>
+			<misc_sub>Purity
+			<item>ritually purifying: ṭahu̅r</item>
+			<item>pure: ṭa̅hir</item>
+			<item>filthy: najis</item>
+			</misc_sub>
+			</chamber>
+		</ED_update>
+	</Glossary>
+	
+	<Forebearers>
+		<Ahmad>
+			<Name>Ahmad ibn Hanbal</Name>
+			<Life>164-03 - 241-03-12 AH / 780-11 - 855-08-02 CE</Life>
+			<Region>Iraq</Region>
+		</Ahmad>
+		
+		<Balban>
+			<Name>Ibn Balban al-Hanbali</Name>
+			<Life>1006 - 1083 AH / 1597 - 1672 CE</Life>
+			<Region>ash-Sham</Region>
+		</Balban>
+		
+	</Forebearers>
+	
+	<Bibliography>
+		<Furber_2016>
+			<Reference>Furber, M. (Ed. &amp; Trans.). (2016). Hanbali acts of worship: From Ibn Balban's The Supreme Synopsis Akhsar al-Mukhtasarat. Islamosaic.</Reference>
+			<Source_Ref>Balban</Source_Ref>
+		</Furber_2016>
+	</Bibliography>
+	
+</Hanbali_Fiqh>
