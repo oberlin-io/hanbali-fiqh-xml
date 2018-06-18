@@ -1,45 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hanbali_Fiqh>
 
-	<Intro>
-		<Basmalah>bismillahi ar-raḥma̅n ar-raḥi̅m allahumma ṣalli 'ala̅ muḥammad wa'ala̅ a̅lihi wa ṣaḥbihi wa sallim</Basmalah>
+	<Basmalah>bismillahi ar-raḥma̅n ar-raḥi̅m allahumma ṣalli 'ala̅ muḥammad wa'ala̅ a̅lihi wa ṣaḥbihi wa sallim</Basmalah>
 
-		<Overview>This XML structure assumes the [ACTION] to be the basic unit of fiqh. Each [ACTION] is a child of either [Conditions], [Invalidators], or the five degrees, eg [Obligatory], [Recommended], etc. Those elements are children of a [CHAMBER] (a sub-section), which is a child of a [GATE] (the traditional 'bab' of fiqh). Each [ACTION] can have an [Expiation] and an [Exception] children. Each [ACTION] and all other elements can have a [Source] child, referencing the [Source_Ref] elements with the [Bibliography] children. Verb phrases are in gerund form.</Overview>
-		
-		<Dev>Try out https://www.jstree.com/ for web UI,  Use http://countwordsfree.com/xmlviewer as example for UI dev ...</Dev>
-		
-	</Intro>
-	
-	<Example_Gate>
-		<Example_Chamber>
-			<Description>
-				<Descrip>A general description needed for or beyond what follows.</Descrip>
-				<Source>Scholar name</Source>
-			</Description>
-			<Invalidators>
-				<Example_Action>
-					<Descrip>Action in gerund form.</Descrip>
-					
-					<Source>Scholar name</Source>
-					
-					<Index>Index as float if part of a sequence for entire chamber, eg 1.0, 4.6, 101.0, etc.</Index>
-					
-					<Expiation>
-						<Descrip>Action in gerund form.</Descrip>
-						<Source>Scholar name</Source>
-					</Expiation>
-					
-					<Exceptions>
-						<Example_Action>
-							<Descrip>Action in gerund form.</Descrip>
-							<Source>Scholar name</Source>
-						</Example_Action>
-					</Exceptions>
-				</Example_Action>
-			</Invalidators>
-		</Example_Chamber>
-	</Example_Gate>
-	
 	<Purification>
 		<Water>
 			<Description>
